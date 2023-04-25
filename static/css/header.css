@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+/* Хедер меню сверху ну вы поняли */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #ffb617;
+    color: #ffffff;
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    /* z-index: 12; */
+    align-items: center;
+    justify-content: space-between;
+}
+header .YesIam {
+    color: #ffffff;
+    font-size: 20;
+    font-weight: 600;
+    transition: .5s;
+    padding-inline-start: 30px;
+}
+header .YesIam:hover {
+    transform: scale(1.2);
+}
+
+header nav ul li {
+    position: relative;
+    float: left;
+}
+
+header nav ul li a {
+    padding: 20px;
+    color: #fff;
+    font-size: 16px;
+    display: block;
+}
+header nav ul li a:hover {
+    background-color: #161616;
+    color: #ffb517;
+}
+
+

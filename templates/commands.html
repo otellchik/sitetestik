@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel = "stylesheet" href = "{{ url_for('static', filename='css/commands.css') }}">
+    <link rel = "stylesheet" href = "{{ url_for('static', filename='css/header.css') }}">
+    <title>Commands</title>
+
+</head>
+<body>
+    <header>
+        <a href="#" class="YesIam">Yes, I am!</a>
+        <nav>
+            <ul>
+                <li><a href="home"><b>HOME</b></a></li>
+                <li><a href="commands"><b>Commands</b></a></li>
+                <li><a href="obnovi"><b>ChoNovogo</b></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class = "cnt">
+        <div class="item">
+            <h3>Хлеп меню</h3>
+            <br>
+            <h4>!hlep</h4>
+            <p>список всех команд</p>
+        </div>
+        <div class="item">
+            <h3>Негрики</h3>
+            <br>
+            <h4>!negr</h4>
+            <p>получить негра</p>
+            <br>
+            <h4>!work</h4>
+            <p>работать негры</p>
+            <br>
+            <h4>!plant (игрок)</h4>
+            <p>плантация</p>
+            <br>
+            <h4>!money (игрок)</h4>
+            <p>посмотреть баланс</p>
+        </div>
+        <div class="item">
+            <h3>Годвилль</h3>
+            <br>
+            <h4>!gv (бог Годвилля)</h4>
+            <p>посмотреть страницу разных игроков Годвилля</p>
+            <br>
+            <h4>!godwiki</h4>
+            <p>искать статью в игровой вики Годвилля</p>
+            <br>
+            <h4>!astro-report</h4>
+            <p>астрологический прогноз Годвилля на сегодня</p>
+        </div>
+        <div class="item">
+            <h3>Смешнявки</h3>
+            <br>
+            <h4>!стенд</h4>
+            <p>рандом генератор стендов</p>
+            <br>
+            <h4>!привет</h4>
+            <p>привет привет</p>
+            <br>
+            <h4>!ха</h4>
+            <p>шутка типа</p>
+            <br>
+            <h4>!дурак</h4>
+            <p>получить оскорбление</p>
+        </div>
+        <div class="item">
+            <h3>Прочее</h3>
+            <br>
+            <h4>!календарь (год) (месяц)</h4>
+            <p>календарик</p>
+            <br>
+            <h4>!wiki (название)</h4>
+            <p>краткое содержание страниц вики</p>
+        </div>
+    </div>
+
+</body>
+</html>

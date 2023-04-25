@@ -1,0 +1,63 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cnt {
+    overflow-x: scroll;
+    display: flex;
+    padding: 24px;
+    width: 370px;
+    height: 460px;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 24px;
+    border-radius: 8px;
+    gap: 12px;
+    margin: 5rem auto;
+}
+
+body {
+    background-color: #161616;
+}
+
+.cnt .item {
+    flex: 0 0 100%;
+    padding: 24px;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #883200, #ff9900);
+    color: #ffffff;
+    scroll-snap-align: start;
+}
+
+.cnt .item h3 {
+    padding: 10px;
+    border-radius: 8px;
+
+    background-color: #ff8800;
+    color: #fff6d9;
+}
+
+.cnt .item p {
+    color: #c5c5c5;
+    font-weight: lighter;
+}
+
+.cnt::-webkit-scrollbar {
+    background-color: #141414;
+    border-radius: 10px;
+}
+
+.cnt::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, #ffbb00, #f0600d);
+    border-radius: 10px;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<!--Шапка типа-->
+    <head>
+        <meta charset="utf-8">
+        <title>HOME</title>
+        <link rel = "stylesheet" href = "{{ url_for('static', filename='css/testik.css') }}">
+        <link rel = "stylesheet" href = "{{ url_for('static', filename='css/header.css') }}">
+    </head>
+<!--Пава пепе гемабоди-->
+    <body>
+        <header>
+            <a href="#" class="YesIam">Yes, I am!</a>
+            <nav>
+                <ul>
+                    <li><a href="home"><b>HOME</b></a></li>
+                    <li><a href="commands"><b>Commands</b></a></li>
+                    <li><a href="obnovi"><b>ChoNovogo</b></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id = "topdiv">
+            <div class = "samtext">
+                <img id = "logo" src="https://i.postimg.cc/k4PNntMt/sketch-1679177660989.png" alt="" width="20%">
+                <h1>TestiK</h1>
+                <h4 id = "toptext">{{ randomfraza }}</h4>
+                <a class = 'addbot' href="https://discord.com/api/oauth2/authorize?client_id=1085201186136801332&permissions=8&scope=bot"><b>Добавить на сирвир!!!</b></a>
+            </div>
+        </div>
+
+        <div class="galeridiv">
+            <div class = "galeri">
+                <div style="background-image: url('https://i.postimg.cc/05Bf14CH/sketch-1682289087319.png');"></div>
+                <div style="background-image: url('https://i.postimg.cc/2518qTJy/sketch-1682293612435.png');"></div>
+                <div style="background-image: url('https://i.postimg.cc/WbcDBRyn/sketch-1682293479881.png');"></div>
+                <div style="background-image: url('https://i.postimg.cc/28YRpT7v/sketch-1682292966945.png');"></div>
+                <div style="background-image: url('https://i.postimg.cc/7PWGmG3p/sketch-1682293197515.png');"></div>
+            </div>  
+        </div>      
+
+        <div class = "info">
+            <div class = "samtext">
+                <h1 class="labelinfo">Цель⠀создания⠀TestiKа:</h1>
+                <p>Тестик создан для обучения Отьелло python`у</p>
+                <h1 class="labelinfo">Права⠀администратора:</h1>
+                <p>Админ права па приколу. команд использующих их нет</p>
+            </div>
+            <div class = "godvillenews">
+                <h1 class="labelinfo">Годвилль Сегодня</h1>
+                <p>{{ gvnews }}</p>
+                <a id = "gvnewsurl" href="https://godville.net/news">читать дальше</a>
+            </div>
+        </div>
+
+        <h1 class="footerlabel">Перейти в раздел</h1>
+
+        <div class="footermenu">
+            <p class="otstup">команды</p>
+            <p class="otstup">обновы</p>
+        </div>
+        <div class="footermenu">
+            <a id = "btncommands" href="commands"></a>
+            <a id = "btnchonovogo" href="obnovi"></a>
+        </div>
+    </body>
+
+</html>

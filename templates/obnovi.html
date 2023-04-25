@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Обновы</title>
+    <link rel = "stylesheet" href = "{{ url_for('static', filename='css/obnovi.css') }}">
+    <link rel = "stylesheet" href = "{{ url_for('static', filename='css/header.css') }}">
+</head>
+<body>
+
+    <header>
+        <a href="#" class="YesIam">Yes, I am!</a>
+        <nav>
+            <ul>
+                <li><a href="home"><b>HOME</b></a></li>
+                <li><a href="commands"><b>Commands</b></a></li>
+                <li><a href="obnovi"><b>ChoNovogo</b></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Обновы</h1>
+    <div class="obndiv">
+
+        <details>
+            <summary>Обнова 1.0</summary>
+            <div class="description_obn">
+                <ul class="ulobn">
+                    <li class="liobn">Создан бот</li>
+                    <li class="liobn">Добавлено три раздела команд:
+                        <ul>
+                            <li class="liobn">Годвилль команды - работают с API Godville, Godville.wiki и Газетой</li>
+                            <li class="liobn">Добавлена система экономики</li>
+                            <li class="liobn">Смешнявки с разными прикольчеками</li>
+                        </ul>
+                    </li>
+                    <li class="liobn">Создан сайт для бота</li>
+                </ul>
+            </div>
+        </details>
+
+    </div>    
+</body>
+</html>
